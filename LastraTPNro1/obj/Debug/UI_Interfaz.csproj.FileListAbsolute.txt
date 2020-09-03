@@ -17,3 +17,13 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LastraTPNro1\obj\Debug\UI_Interfaz.c
 C:\Users\julian.marcos.lastra\Documents\LUG\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CoreCompileInputs.cache
 C:\Users\julian.marcos.lastra\Documents\LUG\LastraTPNro1\obj\Debug\LastraTPNro1.exe
 C:\Users\julian.marcos.lastra\Documents\LUG\LastraTPNro1\obj\Debug\LastraTPNro1.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.exe.config
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.exe
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csprojAssemblyReference.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Form_Login.resources
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Properties.Resources.resources
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.GenerateResource.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CoreCompileInputs.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.exe
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.pdb
