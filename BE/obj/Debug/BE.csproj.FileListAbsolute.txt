@@ -1,0 +1,6 @@
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\bin\Debug\BE.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\bin\Debug\BE.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\obj\Debug\BE.csprojAssemblyReference.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\obj\Debug\BE.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\BE\obj\Debug\BE.pdb
