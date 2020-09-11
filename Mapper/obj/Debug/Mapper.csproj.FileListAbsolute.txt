@@ -1,0 +1,6 @@
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\Mapper.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\Mapper.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csprojAssemblyReference.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.pdb

@@ -19,7 +19,20 @@ namespace LastraTPNro1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Close();
+            //El close cierra el form actual, el App.exit cierra la aplicacion.
+            Application.Exit();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            // Registro
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //Logueo
+
         }
     }
 }
