@@ -12,20 +12,25 @@ namespace Mapper
     public class Class1
     {
         #region Variables
-        public object Nombre { get; set; }
-        public object Apellido { get; set; }
+        public string consulta;
 
         #endregion
 
         #region Metodos
 
-        public bool Operacion()
+        public void Update()
         {
-            bool a = true;
 
-            
+        }
 
-            return a;
+        public void Insert()
+        {
+
+        }
+
+        public void Delete()
+        {
+
         }
 
         #endregion
