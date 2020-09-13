@@ -36,3 +36,23 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.dll
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.pdb
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Usuarios.resources
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.exe.config
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.exe
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\LastraTPNro1.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\BE.dll
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Negocio.dll
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.dll
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\BE.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Negocio.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csprojAssemblyReference.cache
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Gestion.resources
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Form_Login.resources
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Properties.Resources.resources
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Usuarios.resources
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.GenerateResource.cache
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CoreCompileInputs.cache
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CopyComplete
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.exe
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Jabones.resources

@@ -17,7 +17,6 @@ namespace LastraTPNro1
         {
             
         }
-
         
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -27,12 +26,16 @@ namespace LastraTPNro1
         private void usuariosToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //Menu para gestionar usuarios
-
+            Usuarios usr = new Usuarios();
+            usr.Show();
+            Hide();
         }
 
         private void jabonesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            Jabones jb = new Jabones();
+            jb.Show();
+            Hide();
         }
 
         private void button1_Click_1(object sender, EventArgs e)

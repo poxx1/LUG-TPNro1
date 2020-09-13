@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace LastraTPNro1
 {
-    public partial class Usuarios : Form
+    public partial class Jabones : Form
     {
-        public Usuarios()
+        public Jabones()
         {
             InitializeComponent();
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            Hide();
             Gestion gestion = new Gestion();
             gestion.Show();
         }

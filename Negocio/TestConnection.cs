@@ -10,7 +10,7 @@ namespace Negocio
 
         public string Test()
         {
-            c.Consulta();
+            c.TestBD();
             return c.TestBD();
         }
     }

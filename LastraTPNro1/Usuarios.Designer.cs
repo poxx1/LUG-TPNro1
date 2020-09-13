@@ -42,6 +42,7 @@
             this.button1.TabIndex = 0;
             this.button1.Text = "Agregar Usuario";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -69,12 +70,13 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Volver al Sistema";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // Usuarios
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(301, 182);
+            this.ClientSize = new System.Drawing.Size(294, 182);
             this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);

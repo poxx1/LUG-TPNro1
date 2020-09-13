@@ -6,8 +6,8 @@ namespace DAL
 {
     public class Accesos
     {
-        protected SqlConnection cn = new SqlConnection(@"Server=CPX-L7QBTQ41YG6\SQLEXPRESS01;Initial Catalog=Bohemia;Integrated Security=True");
-        //protected SqlConnection cn = new SqlConnection(@Server=\SQLEXPRESS;Initial Catalog=Bohemia;Integrated Security=True");
+        //protected SqlConnection cn = new SqlConnection(@"Server=CPX-L7QBTQ41YG6\SQLEXPRESS01;Initial Catalog=Bohemia;Integrated Security=True");
+        protected SqlConnection cn = new SqlConnection(@"Server= CMD\SQLEXPRESS; Initial Catalog=Bohemia;Integrated Security=True");
         //CPX-L7QBTQ41YG6\SQLEXPRESS01
 
         public string TestBD()
@@ -15,10 +15,11 @@ namespace DAL
             cn.Open();
 
             if (cn.State == ConnectionState.Open)
-                return "Conecto";
-            
+            { cn.Close(); return "Conecto"; }
+
             else
-                return "No conecta perro";
+            { cn.Close(); return "No conecta perro"; }
+            
         }
 
         public bool Consulta()
