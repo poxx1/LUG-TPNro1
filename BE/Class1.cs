@@ -10,5 +10,6 @@ namespace BE
     {
         //Capa con todos las Propiedades
         
+        //Esta clase es solo como referencia, no tiene otra utilidad
     }
 }

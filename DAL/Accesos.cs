@@ -28,7 +28,7 @@ namespace DAL
             SqlCommand cmd = new SqlCommand();
             cmd.CommandType = CommandType.Text;
             cmd.Connection = cn;
-            cmd.CommandText = "SELECT * FROM [Bohemia].[dbo].[Usuarios] Where Pass='1234';";
+            cmd.CommandText = "SELECT * FROM [Bohemia].[dbo].[Usuarios] WHERE [User] = 'poxi';";
 
             DataSet ds = new DataSet();
 

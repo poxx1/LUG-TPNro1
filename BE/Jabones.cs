@@ -2,7 +2,7 @@
 
 namespace BE
 {
-    public class Jabones
+    public class Jabones : Productos
     {
         
     }
