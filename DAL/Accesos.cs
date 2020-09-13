@@ -20,36 +20,50 @@ namespace DAL
             { cn.Close(); return "No conecta perro"; }
         }
 
-        public bool Read()
+        public DataTable Read(string query)
         {
-            cn.Open();
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandType = CommandType.Text;
-            cmd.Connection = cn;
-            cmd.CommandText = "SELECT * FROM [Bohemia].[dbo].[Usuarios] WHERE [User] = 'poxi';";
-
-            DataSet ds = new DataSet();
-
+            var table = new DataTable();
+            
             try
             {
-                int respuesta = cmd.ExecuteNonQuery();
-                SqlDataAdapter Da = new SqlDataAdapter(cmd.CommandText, cn);
-                Da.Fill(ds);
-                int b = 0;
-                foreach (DataRow fila in ds.Tables[0].Rows)
-                {
-                     string a = fila[b].ToString();
-                    b++;    
-                }
-                //Cerras la conexion aca
-                cn.Close();
-                return true;
+                SqlDataAdapter Da = new SqlDataAdapter(query, cn);
+                Da.Fill(table);
             }
             catch (Exception e)
             {
                 throw e;
             }
+
+            //Cerras la conexion aca
+            cn.Close();
+            return table;
         }
-        
+
+        public bool Escribir(string query)
+        {
+            cn.Open();
+            var cmd = new SqlCommand();
+            cmd.CommandType = CommandType.Text;
+            cmd.Connection = cn;
+            cmd.CommandText = query;
+
+            try
+            {
+                int response = cmd.ExecuteNonQuery();
+                return true;
+            }
+            catch (SqlException e)
+            {
+                throw e;
+            }
+            catch (Exception e)
+            {
+                throw e;
+            }
+            finally
+            {
+                cn.Close();
+            }
+        }
     }
 }
