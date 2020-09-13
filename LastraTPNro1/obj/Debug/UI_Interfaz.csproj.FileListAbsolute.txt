@@ -33,3 +33,5 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Ne
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\BE.pdb
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Negocio.pdb
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CopyComplete
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\DAL.pdb

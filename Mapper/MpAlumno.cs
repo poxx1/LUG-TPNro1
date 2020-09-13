@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Mapper
 {
-    public class ABM
+    public class MpAlumno
     {
         #region Variables
         public string consulta;
@@ -32,6 +32,12 @@ namespace Mapper
         {
 
         }
+
+        public void Select()
+        {
+
+        }
+        
 
         #endregion
     }
