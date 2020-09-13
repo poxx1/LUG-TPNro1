@@ -24,7 +24,17 @@ namespace LastraTPNro1
             gestion.Show();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void btAgregar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btModificar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btEliminar_Click(object sender, EventArgs e)
         {
 
         }
