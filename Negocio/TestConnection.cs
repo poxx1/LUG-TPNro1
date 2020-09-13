@@ -2,7 +2,7 @@
 
 namespace Negocio
 {
-    class TestConnection
+    public class TestConnection
     {
         Accesos c = new Accesos();
 
@@ -10,6 +10,7 @@ namespace Negocio
 
         public string Test()
         {
+            c.Consulta();
             return c.TestBD();
         }
     }

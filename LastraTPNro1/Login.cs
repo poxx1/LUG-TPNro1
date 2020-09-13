@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace LastraTPNro1
@@ -46,7 +39,15 @@ namespace LastraTPNro1
         #region Login
         private void button2_Click(object sender, EventArgs e)
         {
+           
             //Logueo
+       
+
+            //Pregunto a la bd si existe ese usuario que estoy buscando
+
+            //If existe uso el If que valida User y Pw
+            //Si no existe, va el else 
+
             if (tbUser.Text == "poxi" && tbPass.Text == "1234")
             {
                 LoginOK = true;
