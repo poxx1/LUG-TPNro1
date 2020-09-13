@@ -10,29 +10,17 @@ using System.Windows.Forms;
 
 namespace LastraTPNro1
 {
-    public partial class Form_Login : Form
+    public partial class Gestion : Form
     {
-        public Form_Login()
+        public Gestion()
         {
             InitializeComponent();
+            MessageBox.Show("Bienvenido", "Tango Software",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //El close cierra el form actual, el App.exit cierra la aplicacion.
             Application.Exit();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            // Registro
-
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //Logueo
-
         }
     }
 }

@@ -9,7 +9,7 @@ using System.Data;
 
 namespace Mapper
 {
-    public class Class1
+    public class ABM
     {
         #region Variables
         public string consulta;

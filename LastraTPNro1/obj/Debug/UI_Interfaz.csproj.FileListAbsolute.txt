@@ -27,3 +27,9 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CoreCompileInputs.cache
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.exe
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Gestion.resources
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\BE.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Negocio.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\BE.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Negocio.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\UI_Interfaz.csproj.CopyComplete

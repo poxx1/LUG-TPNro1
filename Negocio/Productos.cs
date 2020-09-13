@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BE
+namespace Negocio.Properties
 {
-    public class Class1
+    public class Productos
     {
-        //Capa con todos las Propiedades
-        
+        public int Id { get; set; }
+        public string Nombre { get; set; }
     }
 }

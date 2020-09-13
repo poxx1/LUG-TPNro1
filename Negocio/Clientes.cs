@@ -6,14 +6,8 @@ using System.Threading.Tasks;
 
 namespace Negocio
 {
-    public class Class1
+    class Clientes
     {
-        //Aca van los Metodos
-        //BLL
-        
-        //Con la Negicio o BLL referencias a:
-        // DAL
-        // BE
 
     }
 }

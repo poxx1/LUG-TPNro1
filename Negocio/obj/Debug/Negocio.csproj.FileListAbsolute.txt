@@ -10,3 +10,8 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.dll
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\bin\Debug\BE.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\bin\Debug\DAL.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\bin\Debug\BE.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\bin\Debug\DAL.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CopyComplete

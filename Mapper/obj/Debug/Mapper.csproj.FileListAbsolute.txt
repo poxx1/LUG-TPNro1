@@ -4,3 +4,8 @@ C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.c
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.dll
 C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\BE.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\DAL.dll
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\BE.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\bin\Debug\DAL.pdb
+C:\Users\julian.marcos.lastra\Documents\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CopyComplete
