@@ -31,8 +31,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Gestion));
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.gestionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.usuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.jabonesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,6 +62,13 @@
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.inicioToolStripMenuItem.Text = "Inicio";
             // 
+            // salirToolStripMenuItem
+            // 
+            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(96, 22);
+            this.salirToolStripMenuItem.Text = "Salir";
+            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
+            // 
             // gestionToolStripMenuItem
             // 
             this.gestionToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -71,17 +78,10 @@
             this.gestionToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.gestionToolStripMenuItem.Text = "Gestion";
             // 
-            // salirToolStripMenuItem
-            // 
-            this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.salirToolStripMenuItem.Text = "Salir";
-            this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
-            // 
             // usuariosToolStripMenuItem
             // 
             this.usuariosToolStripMenuItem.Name = "usuariosToolStripMenuItem";
-            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.usuariosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.usuariosToolStripMenuItem.Text = "Usuarios";
             this.usuariosToolStripMenuItem.Click += new System.EventHandler(this.usuariosToolStripMenuItem_Click);
             // 
@@ -92,26 +92,26 @@
             this.decksToolStripMenuItem,
             this.dispensersToolStripMenuItem});
             this.productosToolStripMenuItem.Name = "productosToolStripMenuItem";
-            this.productosToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.productosToolStripMenuItem.Size = new System.Drawing.Size(128, 22);
             this.productosToolStripMenuItem.Text = "Productos";
             // 
             // jabonesToolStripMenuItem
             // 
             this.jabonesToolStripMenuItem.Name = "jabonesToolStripMenuItem";
-            this.jabonesToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.jabonesToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.jabonesToolStripMenuItem.Text = "Jabones";
             this.jabonesToolStripMenuItem.Click += new System.EventHandler(this.jabonesToolStripMenuItem_Click);
             // 
             // decksToolStripMenuItem
             // 
             this.decksToolStripMenuItem.Name = "decksToolStripMenuItem";
-            this.decksToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.decksToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.decksToolStripMenuItem.Text = "Decks";
             // 
             // dispensersToolStripMenuItem
             // 
             this.dispensersToolStripMenuItem.Name = "dispensersToolStripMenuItem";
-            this.dispensersToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.dispensersToolStripMenuItem.Size = new System.Drawing.Size(130, 22);
             this.dispensersToolStripMenuItem.Text = "Dispensers";
             // 
             // button1
@@ -148,7 +148,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Gestion";
-            this.Text = "Gestion";
+            this.Text = "Tango Gestion";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

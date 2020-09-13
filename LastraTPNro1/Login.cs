@@ -3,6 +3,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using BE;
 using Negocio;
+using Seguridad;
 
 namespace LastraTPNro1
 {
@@ -43,17 +44,23 @@ namespace LastraTPNro1
         #region Login
         private void button2_Click(object sender, EventArgs e)
         {
+            //Encriptar lo que ingrese para ir a consultar a la bd
+            Cripter c = new Cripter();
+            string a;
+            string b;
+            a = c.Encriptar(tbUser.Text);
+            b = c.Encriptar(tbPass.Text);
 
             //Logueo
             TestConnection tc = new TestConnection();
 
-            //Pregunto a la bd si existe ese usuario que estoy buscando
-             user = tc.Test2();
-             pass = tc.Test2("Password");
+            //Pregunto a la bd si existe ese usuario encriptado que estoy buscando
+             user = tc.SelectCript(a);
+             pass = tc.SelectCript("Password",a);
 
-            //If existe uso el If que valida User y Pw
-
-            //Si no existe, va el else 
+            //Desencripto para validar
+            user = c.Desencriptar(user);
+            pass = c.Desencriptar(pass);
 
             if (tbUser.Text == user && tbPass.Text == pass)
             {
@@ -75,5 +82,10 @@ namespace LastraTPNro1
 
         }
         #endregion
+
+        private void btInfo_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("En caso de querer probar el programa utilizar las siguientes credenciales: "+Environment.NewLine+Environment.NewLine + "User: poxi" +Environment.NewLine+"Pass: 1234", "USUARIO PARA TESTING", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

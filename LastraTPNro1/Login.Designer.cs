@@ -37,6 +37,7 @@
             this.tbPass = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lbLOG = new System.Windows.Forms.Label();
+            this.btInfo = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -119,6 +120,18 @@
             this.lbLOG.TabIndex = 7;
             this.lbLOG.Text = "Log";
             // 
+            // btInfo
+            // 
+            this.btInfo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btInfo.Location = new System.Drawing.Point(135, 37);
+            this.btInfo.Name = "btInfo";
+            this.btInfo.Size = new System.Drawing.Size(75, 38);
+            this.btInfo.TabIndex = 8;
+            this.btInfo.Text = "INFO LOGIN";
+            this.btInfo.UseVisualStyleBackColor = false;
+            this.btInfo.Click += new System.EventHandler(this.btInfo_Click);
+            // 
             // Form_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,6 +139,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(218, 191);
+            this.Controls.Add(this.btInfo);
             this.Controls.Add(this.lbLOG);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.tbPass);
@@ -153,6 +167,7 @@
         private System.Windows.Forms.TextBox tbPass;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lbLOG;
+        private System.Windows.Forms.Button btInfo;
     }
 }
 

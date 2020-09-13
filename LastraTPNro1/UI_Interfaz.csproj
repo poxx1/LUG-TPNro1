@@ -115,6 +115,10 @@
       <Project>{0570a09d-2caf-42ae-8ed3-b59b6598ee97}</Project>
       <Name>Negocio</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{2f67be62-4373-49ae-b660-8d5d84cca72a}</Project>
+      <Name>Seguridad</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
