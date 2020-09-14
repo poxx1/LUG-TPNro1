@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FClientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClientes.Designer.cs">
+      <DependentUpon>FClientes.cs</DependentUpon>
+    </Compile>
     <Compile Include="Jabones.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Usuarios.Designer.cs">
       <DependentUpon>Usuarios.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FClientes.resx">
+      <DependentUpon>FClientes.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Gestion.resx">
       <DependentUpon>Gestion.cs</DependentUpon>
     </EmbeddedResource>

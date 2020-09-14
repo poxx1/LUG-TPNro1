@@ -1,5 +1,5 @@
 ﻿
-namespace Negocio
+namespace BE
 {
     class Decks
     {

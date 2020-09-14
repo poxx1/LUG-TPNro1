@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using Negocio;
+using BE;
 using Seguridad;
 
 namespace LastraTPNro1
@@ -37,7 +37,7 @@ namespace LastraTPNro1
         {
             Encriptar();
 
-            var NUser = new Negocio.NUsuario();
+            var NUser = new BE.NUsuario();
             var BUser = new BE.Usuarios();
             BUser.Us = a;
             BUser.Pw = b;
@@ -54,7 +54,7 @@ namespace LastraTPNro1
             {
                 Encriptar();
 
-                var NUser = new Negocio.NUsuario();
+                var NUser = new BE.NUsuario();
                 var BUser = new BE.Usuarios();
                 BUser.Us = a;
                 NUser.Delete(BUser);
@@ -68,7 +68,7 @@ namespace LastraTPNro1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var NUser = new Negocio.NUsuario();
+            var NUser = new BE.NUsuario();
             var BUser = new BE.Usuarios();
 
             Encriptar();

@@ -1,7 +1,7 @@
 ﻿
-namespace Negocio
+namespace BE
 {
-    class Clientes
+    public class Clientes
     {
         public int ID_Cliente { get; set; }
         public string Nombre { get; set; }
@@ -11,6 +11,7 @@ namespace Negocio
         public string Instagram { get; set; }
         public string Facebook { get; set; }
         public string Localidad { get; set; }
+
+        public BE.Localidades BLocalidad { get; set; }
     }
 }
-

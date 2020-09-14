@@ -4,7 +4,7 @@ using System.Data;
 using DAL;
 using BE;
 
-namespace Negocio
+namespace BE
 {
     public class NJabones
     {

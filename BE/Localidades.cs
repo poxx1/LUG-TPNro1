@@ -1,7 +1,7 @@
 ﻿
 namespace BE
 {
-    class Localidades
+    public class Localidades
     {
         public int ID_Localidad { get; set; }
         public string Nombre_Localidad { get; set; }

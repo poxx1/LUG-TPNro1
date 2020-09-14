@@ -58,3 +58,4 @@ K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.pdb
 K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.Jabones.resources
 K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Seguridad.dll
 K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\bin\Debug\Seguridad.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\LastraTPNro1\obj\Debug\LastraTPNro1.FClientes.resources

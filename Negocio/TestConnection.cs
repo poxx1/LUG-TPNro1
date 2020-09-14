@@ -1,6 +1,6 @@
 ﻿using DAL;
 
-namespace Negocio
+namespace BE
 {
     public class TestConnection
     {

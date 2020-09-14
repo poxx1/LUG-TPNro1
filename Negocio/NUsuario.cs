@@ -2,7 +2,7 @@
 using DAL;
 using System;
 
-namespace Negocio
+namespace BE
 {
     public class NUsuario
     {

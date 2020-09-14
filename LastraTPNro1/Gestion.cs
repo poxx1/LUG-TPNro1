@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Windows.Forms;
-using Negocio;
 using BE;
 
 namespace LastraTPNro1
@@ -48,6 +47,11 @@ namespace LastraTPNro1
         {
             Application.Exit();
         }
+        
+        private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
 
         #region MetodosInutiles
         private void button2_Click(object sender, EventArgs e)
@@ -55,7 +59,12 @@ namespace LastraTPNro1
             TestConnection test = new TestConnection();
             MessageBox.Show(test.Test());
         }
-        #endregion
 
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
     }
 }
