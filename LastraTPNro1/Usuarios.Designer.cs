@@ -72,9 +72,9 @@
             this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
             this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(236, 128);
+            this.button3.Location = new System.Drawing.Point(177, 65);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(53, 53);
+            this.button3.Size = new System.Drawing.Size(53, 58);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = false;
             this.button3.Click += new System.EventHandler(this.button3_Click);
@@ -130,7 +130,9 @@
             // lbLOG
             // 
             this.lbLOG.AutoSize = true;
+            this.lbLOG.BackColor = System.Drawing.Color.Black;
             this.lbLOG.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLOG.ForeColor = System.Drawing.Color.Aqua;
             this.lbLOG.Location = new System.Drawing.Point(12, 160);
             this.lbLOG.Name = "lbLOG";
             this.lbLOG.Size = new System.Drawing.Size(34, 16);
