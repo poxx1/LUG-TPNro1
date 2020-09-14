@@ -37,53 +37,63 @@
             this.tbUser = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.lbLOG = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Lime;
+            this.button1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button1.BackgroundImage")));
+            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(214, 8);
+            this.button1.Location = new System.Drawing.Point(236, 6);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 37);
+            this.button1.Size = new System.Drawing.Size(53, 55);
             this.button1.TabIndex = 0;
-            this.button1.Text = "Agregar Usuario";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
+            this.button2.BackColor = System.Drawing.Color.Yellow;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Location = new System.Drawing.Point(214, 51);
+            this.button2.Location = new System.Drawing.Point(236, 67);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(75, 37);
+            this.button2.Size = new System.Drawing.Size(53, 55);
             this.button2.TabIndex = 1;
-            this.button2.Text = "Modificar Usuario";
-            this.button2.UseVisualStyleBackColor = true;
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
             // 
+            this.button3.BackColor = System.Drawing.Color.Red;
+            this.button3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button3.BackgroundImage")));
+            this.button3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(214, 94);
+            this.button3.Location = new System.Drawing.Point(236, 128);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 37);
+            this.button3.Size = new System.Drawing.Size(53, 53);
             this.button3.TabIndex = 2;
-            this.button3.Text = "Eliminar  Usuario";
-            this.button3.UseVisualStyleBackColor = true;
+            this.button3.UseVisualStyleBackColor = false;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
+            this.button4.BackColor = System.Drawing.Color.Blue;
+            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
+            this.button4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(214, 137);
+            this.button4.Location = new System.Drawing.Point(177, 6);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 37);
+            this.button4.Size = new System.Drawing.Size(53, 55);
             this.button4.TabIndex = 3;
-            this.button4.Text = "Volver al Sistema";
-            this.button4.UseVisualStyleBackColor = true;
+            this.button4.UseVisualStyleBackColor = false;
             this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // tbPass
             // 
-            this.tbPass.Location = new System.Drawing.Point(9, 154);
+            this.tbPass.Location = new System.Drawing.Point(9, 70);
             this.tbPass.Name = "tbPass";
             this.tbPass.PasswordChar = '*';
             this.tbPass.Size = new System.Drawing.Size(100, 20);
@@ -91,7 +101,7 @@
             // 
             // tbUser
             // 
-            this.tbUser.Location = new System.Drawing.Point(9, 115);
+            this.tbUser.Location = new System.Drawing.Point(9, 28);
             this.tbUser.Name = "tbUser";
             this.tbUser.Size = new System.Drawing.Size(100, 20);
             this.tbUser.TabIndex = 14;
@@ -100,7 +110,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 137);
+            this.label2.Location = new System.Drawing.Point(12, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(83, 16);
             this.label2.TabIndex = 13;
@@ -110,11 +120,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 96);
+            this.label1.Location = new System.Drawing.Point(12, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(45, 16);
             this.label1.TabIndex = 12;
             this.label1.Text = "USER";
+            // 
+            // lbLOG
+            // 
+            this.lbLOG.AutoSize = true;
+            this.lbLOG.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLOG.Location = new System.Drawing.Point(12, 160);
+            this.lbLOG.Name = "lbLOG";
+            this.lbLOG.Size = new System.Drawing.Size(34, 16);
+            this.lbLOG.TabIndex = 16;
+            this.lbLOG.Text = "LOG";
             // 
             // Usuarios
             // 
@@ -122,7 +142,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(294, 182);
+            this.ClientSize = new System.Drawing.Size(294, 185);
+            this.Controls.Add(this.lbLOG);
             this.Controls.Add(this.tbPass);
             this.Controls.Add(this.tbUser);
             this.Controls.Add(this.label2);
@@ -148,5 +169,6 @@
         private System.Windows.Forms.TextBox tbUser;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lbLOG;
     }
 }

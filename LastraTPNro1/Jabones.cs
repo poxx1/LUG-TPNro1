@@ -61,12 +61,21 @@ namespace LastraTPNro1
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
-            Asignar(Int32.Parse(tbCodigo.Text));
-            nJabones = new Negocio.Jabones();
-            nJabones.Delete(Bjabones);
-            CargarGrilla();
-            lbLOG.ForeColor = Color.Red;
-            lbLOG.Text = "Se elimino el jabon de la base de datos.";
+            var a = MessageBox.Show("Esta seguro que quiere eliminar el usuario?", "ELIMINAR USER", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (a == DialogResult.Yes)
+            {
+                Asignar(Int32.Parse(tbCodigo.Text));
+                nJabones = new Negocio.Jabones();
+                nJabones.Delete(Bjabones);
+                CargarGrilla();
+                lbLOG.ForeColor = Color.Red;
+                lbLOG.Text = "Se elimino el jabon de la base de datos.";
+            }
+            else
+            {
+                lbLOG.ForeColor = Color.Cyan;
+                lbLOG.Text = "No se elimino el jabon";
+            }
         }
 
         #endregion

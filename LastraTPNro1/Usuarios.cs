@@ -28,5 +28,14 @@ namespace LastraTPNro1
         {
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var a = MessageBox.Show("Esta seguro que quiere eliminar el usuario?", "ELIMINAR USER", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+            if (a == DialogResult.Yes)
+                lbLOG.Text = "Se elimino el usuario";
+            else
+                lbLOG.Text = "No se elimino el usuario";
+        }
     }
 }
