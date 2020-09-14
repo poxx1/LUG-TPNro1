@@ -47,7 +47,11 @@ namespace LastraTPNro1
 
         private void btModificar_Click(object sender, EventArgs e)
         {
-         
+            Asignar();
+            nJabones = new Negocio.Jabones();
+            nJabones.Update(Bjabones);
+            CargarGrilla();
+            tbCantidad.Text = "";
         }
 
         private void btEliminar_Click(object sender, EventArgs e)
