@@ -37,11 +37,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbCantidad = new System.Windows.Forms.TextBox();
+            this.cbAroma = new System.Windows.Forms.ComboBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
+            this.cbColor = new System.Windows.Forms.ComboBox();
+            this.cbBase = new System.Windows.Forms.ComboBox();
+            this.tbCodigo = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -50,7 +52,7 @@
             this.button4.BackColor = System.Drawing.Color.Teal;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(344, 132);
+            this.button4.Location = new System.Drawing.Point(344, 162);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 37);
             this.button4.TabIndex = 7;
@@ -137,17 +139,17 @@
             this.label4.TabIndex = 11;
             this.label4.Text = "CANTIDAD";
             // 
-            // textBox4
+            // tbCantidad
             // 
-            this.textBox4.Location = new System.Drawing.Point(12, 141);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(100, 20);
-            this.textBox4.TabIndex = 15;
+            this.tbCantidad.Location = new System.Drawing.Point(12, 141);
+            this.tbCantidad.Name = "tbCantidad";
+            this.tbCantidad.Size = new System.Drawing.Size(100, 20);
+            this.tbCantidad.TabIndex = 15;
             // 
-            // comboBox1
+            // cbAroma
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cbAroma.FormattingEnabled = true;
+            this.cbAroma.Items.AddRange(new object[] {
             "Canela y vainilla",
             "Cherry",
             "Jazmin",
@@ -157,10 +159,10 @@
             "Lima y coco",
             "Papaya",
             "Tea tree"});
-            this.comboBox1.Location = new System.Drawing.Point(12, 64);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(100, 21);
-            this.comboBox1.TabIndex = 16;
+            this.cbAroma.Location = new System.Drawing.Point(12, 64);
+            this.cbAroma.Name = "cbAroma";
+            this.cbAroma.Size = new System.Drawing.Size(100, 21);
+            this.cbAroma.TabIndex = 16;
             // 
             // dataGridView1
             // 
@@ -168,13 +170,13 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(118, 9);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(220, 152);
+            this.dataGridView1.Size = new System.Drawing.Size(220, 189);
             this.dataGridView1.TabIndex = 17;
             // 
-            // comboBox2
+            // cbColor
             // 
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cbColor.FormattingEnabled = true;
+            this.cbColor.Items.AddRange(new object[] {
             "Amarillo",
             "Blanco",
             "Blanco y marron",
@@ -182,21 +184,38 @@
             "Rojo",
             "Verde",
             "Violeta"});
-            this.comboBox2.Location = new System.Drawing.Point(12, 25);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(100, 21);
-            this.comboBox2.TabIndex = 18;
+            this.cbColor.Location = new System.Drawing.Point(12, 25);
+            this.cbColor.Name = "cbColor";
+            this.cbColor.Size = new System.Drawing.Size(100, 21);
+            this.cbColor.TabIndex = 18;
             // 
-            // comboBox3
+            // cbBase
             // 
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.cbBase.FormattingEnabled = true;
+            this.cbBase.Items.AddRange(new object[] {
             "Glicerina",
             "Coco"});
-            this.comboBox3.Location = new System.Drawing.Point(12, 102);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(100, 21);
-            this.comboBox3.TabIndex = 19;
+            this.cbBase.Location = new System.Drawing.Point(12, 102);
+            this.cbBase.Name = "cbBase";
+            this.cbBase.Size = new System.Drawing.Size(100, 21);
+            this.cbBase.TabIndex = 19;
+            // 
+            // tbCodigo
+            // 
+            this.tbCodigo.Location = new System.Drawing.Point(12, 178);
+            this.tbCodigo.Name = "tbCodigo";
+            this.tbCodigo.Size = new System.Drawing.Size(100, 20);
+            this.tbCodigo.TabIndex = 21;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.label5.Location = new System.Drawing.Point(12, 162);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(49, 13);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "CODIGO";
             // 
             // Jabones
             // 
@@ -204,12 +223,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(421, 170);
-            this.Controls.Add(this.comboBox3);
-            this.Controls.Add(this.comboBox2);
+            this.ClientSize = new System.Drawing.Size(421, 200);
+            this.Controls.Add(this.tbCodigo);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.cbBase);
+            this.Controls.Add(this.cbColor);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.comboBox1);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.cbAroma);
+            this.Controls.Add(this.tbCantidad);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -237,10 +258,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.TextBox tbCantidad;
+        private System.Windows.Forms.ComboBox cbAroma;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.ComboBox comboBox3;
+        private System.Windows.Forms.ComboBox cbColor;
+        private System.Windows.Forms.ComboBox cbBase;
+        private System.Windows.Forms.TextBox tbCodigo;
+        private System.Windows.Forms.Label label5;
     }
 }

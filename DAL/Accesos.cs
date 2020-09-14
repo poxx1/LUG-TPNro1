@@ -39,6 +39,23 @@ namespace DAL
             return table;
         }
 
+        public DataSet ReadDS(string query)
+        {
+            DataSet DS = new DataSet();
+            try
+            {
+                SqlDataAdapter da = new SqlDataAdapter(query, cn);
+                da.Fill(DS);
+            }
+            catch (SqlException ex)
+            {
+                throw ex;
+            }
+            cn.Close();
+
+            return DS;
+        }
+
         public bool Escribir(string query)
         {
             cn.Open();
