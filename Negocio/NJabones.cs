@@ -6,7 +6,7 @@ using BE;
 
 namespace Negocio
 {
-    public class Jabones
+    public class NJabones
     {
       
         public List<BE.Jabones> CargarJabones()
