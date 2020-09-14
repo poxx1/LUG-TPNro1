@@ -8,29 +8,36 @@ namespace Negocio
 {
     public class Jabones
     {
-        DataSet ds = new DataSet();
-        Accesos datos = new Accesos();
-
-        public List<Jabones> CargarJabones()
+      
+        public List<BE.Jabones> CargarJabones()
         {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+
             string query = "SELECT * FROM Bohemia.dbo.Jabones";
+            //string query = "SELECT Jabon.Jabon_ID,Aln"
+
             ds = datos.ReadDS(query);
-            var listaJabones = new List<Jabones>();
+
+            var listaJabones = new List<BE.Jabones>();
 
             if (ds.Tables[0].Rows.Count > 0)
             {
                 foreach (DataRow fila in ds.Tables[0].Rows)
                 {
                     var jabon = new BE.Jabones();
-                    var bllJabones = new Negocio.Jabones();
-
+                    
+                    //ID
                     jabon.Id = Convert.ToInt32(fila[0]);
-                    jabon.Aroma = fila[1].ToString();
-                    jabon.Base = fila[2].ToString();
-                    jabon.Color = fila[3].ToString();
+                    //Color
+                    jabon.Color = fila[1].ToString();
+                    //Aroma
+                    jabon.Aroma = fila[2].ToString();
+                    //Base
+                    jabon.Base = fila[3].ToString();
+                    //Cantidad
                     jabon.Cantidad = Convert.ToInt32(fila[4]);
-                
-}
+                }
             }
             else
             {

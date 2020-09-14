@@ -44,6 +44,7 @@
             this.cbBase = new System.Windows.Forms.ComboBox();
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.lbLOG = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,13 +218,26 @@
             this.label5.TabIndex = 20;
             this.label5.Text = "CODIGO";
             // 
+            // lbLOG
+            // 
+            this.lbLOG.AutoSize = true;
+            this.lbLOG.BackColor = System.Drawing.Color.Black;
+            this.lbLOG.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbLOG.ForeColor = System.Drawing.Color.White;
+            this.lbLOG.Location = new System.Drawing.Point(15, 204);
+            this.lbLOG.Name = "lbLOG";
+            this.lbLOG.Size = new System.Drawing.Size(43, 18);
+            this.lbLOG.TabIndex = 22;
+            this.lbLOG.Text = "LOG";
+            // 
             // Jabones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(421, 200);
+            this.ClientSize = new System.Drawing.Size(421, 226);
+            this.Controls.Add(this.lbLOG);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.cbBase);
@@ -265,5 +279,6 @@
         private System.Windows.Forms.ComboBox cbBase;
         private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label lbLOG;
     }
 }
