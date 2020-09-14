@@ -56,7 +56,11 @@ namespace LastraTPNro1
 
         private void btEliminar_Click(object sender, EventArgs e)
         {
-
+            Asignar();
+            nJabones = new Negocio.Jabones();
+            nJabones.Delete(Bjabones);
+            CargarGrilla();
+            tbCantidad.Text = "";
         }
 
         #endregion

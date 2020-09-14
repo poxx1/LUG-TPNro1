@@ -58,5 +58,14 @@ namespace Negocio
 
             return d.Escribir(query);
         }
+
+        public bool Delete(BE.Jabones jabon)
+        {
+            var d = new Accesos();
+
+            string query = "DELETE from Jabones WHERE Id_Jabon=" + jabon.Id + "";
+
+            return d.Escribir(query);
+        }
     }
 }
