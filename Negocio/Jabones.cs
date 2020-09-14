@@ -15,8 +15,7 @@ namespace Negocio
             Accesos datos = new Accesos();
 
             string query = "SELECT * FROM Bohemia.dbo.Jabones";
-            //string query = "SELECT Jabon.Jabon_ID,Aln"
-
+            
             ds = datos.ReadDS(query);
 
             var listaJabones = new List<BE.Jabones>();
@@ -37,6 +36,8 @@ namespace Negocio
                     jabon.Base = fila[3].ToString();
                     //Cantidad
                     jabon.Cantidad = Convert.ToInt32(fila[4]);
+
+                    listaJabones.Add(jabon);
                 }
             }
             else
