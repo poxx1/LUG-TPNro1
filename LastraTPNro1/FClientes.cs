@@ -25,6 +25,7 @@ namespace LastraTPNro1
         {
             InitializeComponent();
             LoadLocs();
+            LoadClientes();
         }
 
         private void btDelete_Click(object sender, EventArgs e)
@@ -119,7 +120,8 @@ namespace LastraTPNro1
 
         private void FClientes_Load(object sender, EventArgs e)
         {
-
+            Nclientes = new NClientes();
+            Nclientes.CargarClientes();
         }
 
         private void btUpdate_Click(object sender, EventArgs e)
@@ -165,6 +167,8 @@ namespace LastraTPNro1
 
         private void LoadLocs()
         {
+            //Si no pongo el clear me agrega todos los nuevos y queda un asco
+            cbASD.Items.Clear();
             NLocalidad = new NLocalidad();
             var l = new List<BE.Localidades>();
             l = NLocalidad.LoadLocalidades();
@@ -176,8 +180,16 @@ namespace LastraTPNro1
 
         private void LoadClientes()
         {
-
+            Negocio.NClientes nC = new NClientes();
+            dG.DataSource = null;
+            dG.DataSource = nC.CargarClientes();
+            dG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
         #endregion
+
+        private void dG_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -14,7 +14,7 @@ namespace DAL
             cn.Open();
 
             if (cn.State == ConnectionState.Open)
-            { cn.Close(); return "Conecto"; }
+            { cn.Close(); return "Conecto a la base de datos"; }
 
             else
             { cn.Close(); return "No conecta perro"; }

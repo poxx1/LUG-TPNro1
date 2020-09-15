@@ -13,8 +13,11 @@ namespace Negocio
             var Ds = new DataSet();
             var d = new Accesos();
             var ListaClientes = new List<Clientes>();
+            int counter=1;
 
-            string query = "SELECT ";
+            string query = "SELECT Clientes.Nombre,Clientes.Apellido,Clientes.Direccion,Clientes.Telefono,"+
+               "Clientes.Instagram,Clientes.Facebook,Localidad.Nombre_Localidad as Localidad"+
+               " FROM Clientes, Localidad WHERE Clientes.Localidad = Localidad.ID_Localidad; ";
 
             Ds = d.ReadDS(query);
 
@@ -26,20 +29,18 @@ namespace Negocio
                     var NClientes = new NClientes();
                     var BLocalidad = new Localidades();
 
-                    BCliente.ID_Cliente = Convert.ToInt32(fila[0]);
-                    BCliente.Nombre = fila[1].ToString();
-                    BCliente.Apellido = fila[2].ToString();
-                    BCliente.Direccion = fila[3].ToString();
-                    BCliente.Telefono = fila[4].ToString();
-                    BCliente.Instagram = fila[5].ToString();
-                    BCliente.Facebook = fila[6].ToString();
-
-                    BLocalidad.ID_Localidad = Convert.ToInt32(fila["ID_Localidad"]);
-                    BLocalidad.Nombre_Localidad = fila["Localidad"].ToString();
-
-                    BCliente.BLocalidad = BLocalidad;
-
+                    BCliente.ID_Cliente = counter;
+                    BCliente.Nombre = fila[0].ToString();
+                    BCliente.Apellido = fila[1].ToString();
+                    BCliente.Direccion = fila[2].ToString();
+                    BCliente.Telefono = fila[3].ToString();
+                    BCliente.Instagram = fila[4].ToString();
+                    BCliente.Facebook = fila[5].ToString();
+                    BCliente.Localidad = fila[6].ToString();
+                    
                     ListaClientes.Add(BCliente);
+
+                    counter++;
                 }
             }
             

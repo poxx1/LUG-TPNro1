@@ -259,6 +259,7 @@
             this.dG.Name = "dG";
             this.dG.Size = new System.Drawing.Size(480, 309);
             this.dG.TabIndex = 24;
+            this.dG.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dG_CellContentClick);
             // 
             // tbIDLoc
             // 

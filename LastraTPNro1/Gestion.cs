@@ -40,7 +40,7 @@ namespace LastraTPNro1
         private void button1_Click_1(object sender, EventArgs e)
         {
             TestConnection test = new TestConnection();
-            MessageBox.Show(test.Test());
+            MessageBox.Show(test.Test(),"TEST DE CONEXION",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
 
         private void button2_Click_1(object sender, EventArgs e)
