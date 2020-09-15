@@ -49,17 +49,20 @@ namespace Negocio
             return ListaClientes;
         }
 
-        public bool InsertCliente(BE.Clientes cliente)
+        public bool InsertCliente(BE.Clientes c)
         {
             var a = new Accesos();
-            string query = "";
+            string query = "INSERT into Clientes (ID_Cliente, Nombre, Apellido,Direccion,Telefono,Instagram,Facebook,Localidad)" +
+                "VALUES ('"+c.ID_Cliente+"','"+c.Nombre+"','"+c.Apellido+"','"+c.Direccion+"','"+c.Telefono+"','"+c.Instagram+"','"+c.Facebook+"','"+c.Localidad+"')";      
             return a.Escribir(query);
         }
 
-        public bool UpdateCliente(BE.Clientes cliente)
+        public bool UpdateCliente(BE.Clientes c)
         {
             var a = new Accesos();
-            string query = "";
+            string query = "UPDATE Clientes SET Nombre = '"+c.Nombre+"', Apellido = '"+c.Apellido+"', Direccion = '"+c.Direccion+"'," +
+                "Telefono = '"+c.Telefono+"', Instagram = '"+c.Instagram+"', Facebook = '"+c.Facebook+"', Localidad = '"+c.Localidad+"' "+
+                "WHERE ID_Cliente = '"+c.ID_Cliente+"'";
             return a.Escribir(query);
         }
 

@@ -64,9 +64,12 @@ namespace LastraTPNro1
         
         private void btInsert_Click(object sender, EventArgs e)
         {
-
+            string id = tbIDC.Text;
+            SetCliente();
+            Nclientes = new NClientes();
+            Nclientes.InsertCliente(BCliente);
             lbLOG.ForeColor = Color.Green;
-            lbLOG.Text = "Se agrego el jabon a la base de datos.";
+            lbLOG.Text = "Se agrego el Cliente a la base de datos.";
 
         }
 
@@ -111,7 +114,7 @@ namespace LastraTPNro1
             s = a.Split('.');
             tbIDLoc.Text = s[0];
             tbLocName.Text = s[1];
-            tbLocCliente.Text = s[1];
+            tbLocCliente.Text = s[0];
         }
 
         private void FClientes_Load(object sender, EventArgs e)
@@ -121,7 +124,12 @@ namespace LastraTPNro1
 
         private void btUpdate_Click(object sender, EventArgs e)
         {
-
+            string id = tbIDC.Text;
+            SetCliente();
+            Nclientes = new NClientes();
+            Nclientes.UpdateCliente(BCliente);
+            lbLOG.ForeColor = Color.Yellow;
+            lbLOG.Text = "Se modifico el Cliente en la base de datos.";
         }
         #endregion
 
@@ -133,6 +141,7 @@ namespace LastraTPNro1
             BCliente.Nombre = tbNombreC.Text;
             BCliente.Apellido = tbApellidoC.Text;
             BCliente.Direccion = tbDirC.Text;
+            BCliente.Telefono = tbTelefonoC.Text;
             BCliente.Localidad = tbLocCliente.Text;
             BCliente.Instagram = tbIGC.Text;
             BCliente.Facebook = tbFBC.Text;

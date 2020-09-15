@@ -13,7 +13,7 @@ namespace Negocio
             var a = new Accesos();
             var ListLocalidades = new List<BE.Localidades>();
             var query = "SELECT * FROM Localidad";
-
+            
             t = a.Read(query);
 
             if (t.Rows.Count > 0)

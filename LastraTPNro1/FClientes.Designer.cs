@@ -193,32 +193,38 @@
             // 
             // btInsert
             // 
+            this.btInsert.BackColor = System.Drawing.Color.Lime;
+            this.btInsert.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btInsert.BackgroundImage")));
+            this.btInsert.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btInsert.Location = new System.Drawing.Point(607, 1);
             this.btInsert.Name = "btInsert";
             this.btInsert.Size = new System.Drawing.Size(75, 77);
             this.btInsert.TabIndex = 16;
-            this.btInsert.Text = "button1";
-            this.btInsert.UseVisualStyleBackColor = true;
+            this.btInsert.UseVisualStyleBackColor = false;
             this.btInsert.Click += new System.EventHandler(this.btInsert_Click);
             // 
             // btUpdate
             // 
+            this.btUpdate.BackColor = System.Drawing.Color.Yellow;
+            this.btUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btUpdate.BackgroundImage")));
+            this.btUpdate.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btUpdate.Location = new System.Drawing.Point(607, 79);
             this.btUpdate.Name = "btUpdate";
             this.btUpdate.Size = new System.Drawing.Size(75, 77);
             this.btUpdate.TabIndex = 17;
-            this.btUpdate.Text = "button2";
-            this.btUpdate.UseVisualStyleBackColor = true;
+            this.btUpdate.UseVisualStyleBackColor = false;
             this.btUpdate.Click += new System.EventHandler(this.btUpdate_Click);
             // 
             // btDelete
             // 
+            this.btDelete.BackColor = System.Drawing.Color.Red;
+            this.btDelete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btDelete.BackgroundImage")));
+            this.btDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btDelete.Location = new System.Drawing.Point(607, 157);
             this.btDelete.Name = "btDelete";
             this.btDelete.Size = new System.Drawing.Size(75, 77);
             this.btDelete.TabIndex = 18;
-            this.btDelete.Text = "button3";
-            this.btDelete.UseVisualStyleBackColor = true;
+            this.btDelete.UseVisualStyleBackColor = false;
             this.btDelete.Click += new System.EventHandler(this.btDelete_Click);
             // 
             // btSalir
@@ -282,32 +288,35 @@
             // 
             // btInsertLOC
             // 
+            this.btInsertLOC.BackColor = System.Drawing.Color.Lime;
             this.btInsertLOC.Location = new System.Drawing.Point(165, 351);
             this.btInsertLOC.Name = "btInsertLOC";
             this.btInsertLOC.Size = new System.Drawing.Size(55, 47);
             this.btInsertLOC.TabIndex = 29;
             this.btInsertLOC.Text = "INS";
-            this.btInsertLOC.UseVisualStyleBackColor = true;
+            this.btInsertLOC.UseVisualStyleBackColor = false;
             this.btInsertLOC.Click += new System.EventHandler(this.btInsertLOC_Click);
             // 
             // btUpdateLOC
             // 
+            this.btUpdateLOC.BackColor = System.Drawing.Color.Yellow;
             this.btUpdateLOC.Location = new System.Drawing.Point(226, 351);
             this.btUpdateLOC.Name = "btUpdateLOC";
             this.btUpdateLOC.Size = new System.Drawing.Size(55, 47);
             this.btUpdateLOC.TabIndex = 30;
             this.btUpdateLOC.Text = "UPD";
-            this.btUpdateLOC.UseVisualStyleBackColor = true;
+            this.btUpdateLOC.UseVisualStyleBackColor = false;
             this.btUpdateLOC.Click += new System.EventHandler(this.btUpdateLOC_Click);
             // 
             // btDeleteLoc
             // 
+            this.btDeleteLoc.BackColor = System.Drawing.Color.Red;
             this.btDeleteLoc.Location = new System.Drawing.Point(287, 351);
             this.btDeleteLoc.Name = "btDeleteLoc";
             this.btDeleteLoc.Size = new System.Drawing.Size(55, 47);
             this.btDeleteLoc.TabIndex = 31;
             this.btDeleteLoc.Text = "DEL";
-            this.btDeleteLoc.UseVisualStyleBackColor = true;
+            this.btDeleteLoc.UseVisualStyleBackColor = false;
             this.btDeleteLoc.Click += new System.EventHandler(this.btDeleteLoc_Click);
             // 
             // cbASD
@@ -346,7 +355,7 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(683, 407);
+            this.ClientSize = new System.Drawing.Size(686, 407);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tbLocName);
             this.Controls.Add(this.cbASD);
