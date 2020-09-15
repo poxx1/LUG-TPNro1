@@ -75,5 +75,9 @@ namespace BE
 
             return d.Write(query);
         }
+
+        #region Metodos de los informes
+
+        #endregion
     }
 }

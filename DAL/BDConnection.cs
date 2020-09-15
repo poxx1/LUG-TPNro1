@@ -5,7 +5,8 @@ namespace DAL
 {
     public class BDConnection
     {
-        //Esta clase no esta implementada, solo esta el codigo. 
+        //Esta clase funciona igual que Accesos.
+        //En lugar de tener un DataAdapter, uso un DataReader.
 
         public object Consulta(string query)
         {

@@ -97,5 +97,11 @@ namespace LastraTPNro1
         {
             MessageBox.Show("En caso de querer probar el programa utilizar las siguientes credenciales: "+Environment.NewLine+Environment.NewLine + "User: admin" +Environment.NewLine+"Pass: admin", "USUARIO PARA TESTING", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        private void button3_Click_1(object sender, EventArgs e)
+        {
+            tbUser.Text = "admin";
+            tbPass.Text = "admin";
+        }
     }
 }

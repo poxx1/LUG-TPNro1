@@ -10,6 +10,10 @@ using DAL;
 namespace Mapper
 {
     public class MpAlumno
+    //Este proyecto solo esta cargado, no implementado, debido a que
+    //el TP como consigna tenia 5 CAPAS y tener una sexta no estaba como 
+    //punto. " ABM Conectado y transacciones. (5 CAPAS)
+
     {
         #region Variables
         public string consulta;
