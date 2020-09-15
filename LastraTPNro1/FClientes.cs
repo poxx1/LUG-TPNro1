@@ -189,7 +189,15 @@ namespace LastraTPNro1
 
         private void dG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-
+            var c = new BE.Clientes();
+            c = (BE.Clientes)dG.CurrentRow.DataBoundItem;
+            tbIDC.Text = c.ID_Cliente.ToString();
+            tbNombreC.Text = c.Nombre;
+            tbDirC.Text = c.Direccion;
+            tbLocCliente.Text = c.Localidad;
+            tbTelefonoC.Text = c.Telefono;
+            tbIGC.Text = c.Instagram;
+            tbFBC.Text = c.Facebook;
         }
     }
 }
