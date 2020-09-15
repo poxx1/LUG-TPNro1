@@ -109,5 +109,16 @@ namespace LastraTPNro1
             dataGridView1.AlternatingRowsDefaultCellStyle.BackColor = Color.Coral;
         }
         #endregion
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            var j = new BE.Jabones();
+            j = (BE.Jabones)dataGridView1.CurrentRow.DataBoundItem;
+            cbColor.Text = j.Color;
+            cbAroma.Text = j.Aroma;
+            cbBase.Text = j.Base;
+            tbCantidad.Text = j.Cantidad.ToString();
+            tbCodigo.Text = j.Id.ToString();
+        }
     }
 }

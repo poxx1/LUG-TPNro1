@@ -15,3 +15,4 @@ K:\UAI 2020\LUG\LUG-TPNro1\BE\bin\Debug\BE.pdb
 K:\UAI 2020\LUG\LUG-TPNro1\BE\obj\Debug\BE.csproj.CoreCompileInputs.cache
 K:\UAI 2020\LUG\LUG-TPNro1\BE\obj\Debug\BE.dll
 K:\UAI 2020\LUG\LUG-TPNro1\BE\obj\Debug\BE.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\BE\obj\Debug\BE.csprojAssemblyReference.cache

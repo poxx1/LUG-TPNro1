@@ -56,7 +56,7 @@ namespace DAL
             return DS;
         }
 
-        public bool Escribir(string query)
+        public bool Write(string query)
         {
             cn.Open();
             var cmd = new SqlCommand();

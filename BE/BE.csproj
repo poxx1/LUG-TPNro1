@@ -43,8 +43,6 @@
   <ItemGroup>
     <Compile Include="BEj.cs" />
     <Compile Include="Clientes.cs" />
-    <Compile Include="Decks.cs" />
-    <Compile Include="Dispensers.cs" />
     <Compile Include="Jabones.cs" />
     <Compile Include="Localidades.cs" />
     <Compile Include="Productos.cs" />

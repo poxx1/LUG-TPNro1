@@ -36,21 +36,21 @@ namespace Negocio
         {
             var a = new Accesos();
             var query = "INSERT into Localidad (ID_Localidad,Nombre_Localidad) VALUES ('"+l.ID_Localidad+"','"+l.Nombre_Localidad+"');";
-            return a.Escribir(query);
+            return a.Write(query);
         }
 
         public bool Update(BE.Localidades l)
         {
             var a = new Accesos();
             var query = "UPDATE Localidad SET Nombre_Localidad = '"+l.Nombre_Localidad+"' WHERE ID_Localidad = "+l.ID_Localidad+"";
-            return a.Escribir(query);
+            return a.Write(query);
         }
 
         public bool Delete(BE.Localidades l)
         {
             var a = new Accesos();
             var query = "DELETE FROM Localidad WHERE ID_Localidad = "+l.ID_Localidad+"";
-            return a.Escribir(query);
+            return a.Write(query);
         }
     }
 }

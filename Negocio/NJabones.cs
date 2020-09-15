@@ -53,7 +53,7 @@ namespace BE
             string query = "INSERT into Jabones (ID_Jabon, Color, Aroma, Base, Cantidad) VALUES ('"+jabon.Id
                 +"','"+jabon.Color+"','"+jabon.Aroma+"','"+jabon.Base+"',"+jabon.Cantidad+")";
 
-            return d.Escribir(query);
+            return d.Write(query);
         }
 
         public bool Update(BE.Jabones jabon)
@@ -64,7 +64,7 @@ namespace BE
                 jabon.Aroma +"', Base = '" + jabon.Base + "', Cantidad = " + jabon.Cantidad +
                 "WHERE Id_Jabon ="+jabon.Id+"";
 
-            return d.Escribir(query);
+            return d.Write(query);
         }
 
         public bool Delete(BE.Jabones jabon)
@@ -73,7 +73,7 @@ namespace BE
 
             string query = "DELETE from Jabones WHERE Id_Jabon=" + jabon.Id + "";
 
-            return d.Escribir(query);
+            return d.Write(query);
         }
     }
 }
