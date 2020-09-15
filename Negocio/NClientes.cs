@@ -6,7 +6,7 @@ using System.Data;
 
 namespace Negocio
 {
-    class NClientes
+    public class NClientes
     {
         public List<BE.Clientes> CargarClientes()
         {
@@ -49,5 +49,25 @@ namespace Negocio
             return ListaClientes;
         }
 
+        public bool InsertCliente(BE.Clientes cliente)
+        {
+            var a = new Accesos();
+            string query = "";
+            return a.Escribir(query);
+        }
+
+        public bool UpdateCliente(BE.Clientes cliente)
+        {
+            var a = new Accesos();
+            string query = "";
+            return a.Escribir(query);
+        }
+
+        public bool DeleteCliente(BE.Clientes cliente)
+        {
+            var a = new Accesos();
+            string query = "DELETE from Clientes WHERE ID_Cliente = "+cliente.ID_Cliente+"";
+            return a.Escribir(query);
+        }
     }
 }

@@ -50,7 +50,9 @@ namespace LastraTPNro1
         
         private void clientesToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            var fc = new FClientes();
+            fc.Show();
+            Hide();
         }
 
         #region MetodosInutiles

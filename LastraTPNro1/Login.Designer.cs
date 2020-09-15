@@ -43,7 +43,7 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(135, 145);
+            this.button1.Location = new System.Drawing.Point(135, 139);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(75, 33);
             this.button1.TabIndex = 0;
@@ -114,7 +114,7 @@
             this.lbLOG.AutoSize = true;
             this.lbLOG.BackColor = System.Drawing.Color.Black;
             this.lbLOG.ForeColor = System.Drawing.Color.Aqua;
-            this.lbLOG.Location = new System.Drawing.Point(12, 175);
+            this.lbLOG.Location = new System.Drawing.Point(25, 175);
             this.lbLOG.Name = "lbLOG";
             this.lbLOG.Size = new System.Drawing.Size(25, 13);
             this.lbLOG.TabIndex = 7;

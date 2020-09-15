@@ -52,11 +52,12 @@ namespace Seguridad
         {
             //A la key la puedo poner en el .config o usar el crendential manager.
             string key = "asd";
-            byte[] keyArray;
-            byte[] decifrar = Convert.FromBase64String(c);
 
             try
             {
+                byte[] keyArray;
+                byte[] decifrar = Convert.FromBase64String(c);
+
                 var md5 = new MD5CryptoServiceProvider();
                 var t = new TripleDESCryptoServiceProvider();
 
