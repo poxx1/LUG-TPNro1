@@ -60,6 +60,7 @@
             this.cbASD = new System.Windows.Forms.ComboBox();
             this.tbLocName = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dG)).BeginInit();
             this.SuspendLayout();
             // 
@@ -349,6 +350,18 @@
             this.label11.TabIndex = 34;
             this.label11.Text = "SELECCIONAR LA LOCAIDAD DESDE ACA";
             // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.Black;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(4, 401);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(162, 13);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "LASTRA, JULIAN MARCOS";
+            // 
             // FClientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -356,7 +369,8 @@
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(686, 407);
+            this.ClientSize = new System.Drawing.Size(686, 416);
+            this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.tbLocName);
             this.Controls.Add(this.cbASD);
@@ -431,5 +445,6 @@
         private System.Windows.Forms.ComboBox cbASD;
         private System.Windows.Forms.TextBox tbLocName;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }

@@ -78,6 +78,108 @@ namespace BE
 
         #region Metodos de los informes
 
+        public List<string> SelectAROMAS()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var counterAroma = 0;
+            var stringAroma = "";
+
+            string query = "SELECT Aroma, COUNT(Aroma) as 'Cantidad' FROM Jabones GROUP by Jabones.Aroma";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    var jabon = new BE.Jabones();
+
+                    //Aroma
+                    stringAroma = fila[0].ToString();
+                
+                    counterAroma = Convert.ToInt32(fila[1]);
+
+                    listaJabones.Add(stringAroma + ": " + counterAroma.ToString());
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
+        public List<string> SelectBASES()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var counterAroma = 0;
+            var stringAroma = "";
+
+            string query = "SELECT Base, COUNT(Base) as 'Cantidad' FROM Jabones GROUP by Jabones.Base";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    var jabon = new BE.Jabones();
+
+                    //Aroma
+                    stringAroma = fila[0].ToString();
+
+                    counterAroma = Convert.ToInt32(fila[1]);
+
+                    listaJabones.Add(stringAroma + ": " + counterAroma.ToString());
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
+        public List<string> SelectCOLORES()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var counterAroma = 0;
+            var stringAroma = "";
+
+            string query = "SELECT Color, COUNT(Color) as 'Cantidad' FROM Jabones GROUP by Jabones.Color";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    var jabon = new BE.Jabones();
+
+                    //Aroma
+                    stringAroma = fila[0].ToString();
+
+                    counterAroma = Convert.ToInt32(fila[1]);
+
+                    listaJabones.Add(stringAroma + ": " + counterAroma.ToString());
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
         #endregion
     }
 }

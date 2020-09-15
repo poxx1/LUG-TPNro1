@@ -76,6 +76,94 @@ namespace Negocio
 
         #region Metodos de los informes
 
+        public List<string> SelectLOCALIDAD()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var Localidad = "";
+            var Cantidad = 0;
+
+            string query = "SELECT Localidad.Nombre_Localidad,COUNT(Localidad) as 'Cantidad' FROM Localidad,Clientes"+
+            " WHERE Localidad.ID_Localidad = Clientes.Localidad GROUP BY Localidad.Nombre_Localidad";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    Localidad = fila[0].ToString();
+
+                    Cantidad = Convert.ToInt32(fila[1]);
+
+                    listaJabones.Add( Localidad + ": " + Cantidad.ToString());
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
+        public List<string> SelectINSTAGRAM()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var Cantidad = "";
+
+            string query = "SELECT COUNT(Instagram) as 'Cantidad' FROM Clientes WHERE Instagram != ' '";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    Cantidad = fila[0].ToString();
+                    
+                    listaJabones.Add("Cantidad: " + Cantidad);
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
+        public List<string> SelectFACEBOOK()
+        {
+            DataSet ds = new DataSet();
+            Accesos datos = new Accesos();
+            var Cantidad = "";
+
+            string query = "SELECT COUNT(Facebook) as 'Cantidad' FROM Clientes WHERE Facebook != ' '";
+
+            ds = datos.ReadDS(query);
+
+            var listaJabones = new List<string>();
+
+            if (ds.Tables[0].Rows.Count > 0)
+            {
+                foreach (DataRow fila in ds.Tables[0].Rows)
+                {
+                    Cantidad = fila[0].ToString();
+
+                    listaJabones.Add("Cantidad: " + Cantidad);
+                }
+            }
+            else
+            {
+                listaJabones = null;
+            }
+            return listaJabones;
+        }
+
         #endregion
     }
 }

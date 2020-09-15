@@ -194,7 +194,8 @@ namespace LastraTPNro1
             tbIDC.Text = c.ID_Cliente.ToString();
             tbNombreC.Text = c.Nombre;
             tbDirC.Text = c.Direccion;
-            tbLocCliente.Text = c.Localidad;
+            //Si pongo la localidad del dG la re cago, por eso lo comente
+            //tbLocCliente.Text = c.Localidad;
             tbTelefonoC.Text = c.Telefono;
             tbIGC.Text = c.Instagram;
             tbFBC.Text = c.Facebook;

@@ -45,6 +45,7 @@
             this.tbCodigo = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.lbLOG = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -53,9 +54,9 @@
             this.button4.BackColor = System.Drawing.Color.Teal;
             this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.ForeColor = System.Drawing.Color.White;
-            this.button4.Location = new System.Drawing.Point(406, 357);
+            this.button4.Location = new System.Drawing.Point(416, 357);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(120, 25);
+            this.button4.Size = new System.Drawing.Size(120, 48);
             this.button4.TabIndex = 7;
             this.button4.Text = "Volver al Sistema";
             this.button4.UseVisualStyleBackColor = false;
@@ -231,13 +232,26 @@
             this.lbLOG.TabIndex = 22;
             this.lbLOG.Text = "LOG";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Black;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.ForeColor = System.Drawing.Color.White;
+            this.label7.Location = new System.Drawing.Point(9, 392);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(162, 13);
+            this.label7.TabIndex = 23;
+            this.label7.Text = "LASTRA, JULIAN MARCOS";
+            // 
             // Jabones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(538, 389);
+            this.ClientSize = new System.Drawing.Size(538, 410);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.lbLOG);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.label5);
@@ -281,5 +295,6 @@
         private System.Windows.Forms.TextBox tbCodigo;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lbLOG;
+        private System.Windows.Forms.Label label7;
     }
 }

@@ -68,5 +68,53 @@ namespace LastraTPNro1
         }
 
         #endregion
+
+        private void btInformesCT_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            listBox5.Items.Clear();
+            listBox6.Items.Clear();
+
+            var j = new Negocio.NClientes();
+            var t = j.SelectINSTAGRAM();
+            foreach (var l in t)
+            {
+                listBox5.Items.Add(l.ToString());
+            }
+            t = j.SelectFACEBOOK();
+            foreach (var l in t)
+            {
+                listBox6.Items.Add(l.ToString());
+            }
+            t = j.SelectLOCALIDAD();
+            foreach (var l in t)
+            {
+                listBox1.Items.Add(l.ToString());
+            }
+        }
+
+        private void btInformesJB_Click(object sender, EventArgs e)
+        {
+            listBox2.Items.Clear();
+            listBox3.Items.Clear();
+            listBox4.Items.Clear();
+
+            NJabones j = new NJabones();
+            var t = j.SelectAROMAS();
+            foreach (var l in t)
+            {
+                listBox2.Items.Add(l.ToString());
+            }
+            t = j.SelectBASES();
+            foreach (var l in t)
+            {
+                listBox3.Items.Add(l.ToString());
+            }
+            t = j.SelectCOLORES();
+            foreach (var l in t)
+            {
+                listBox4.Items.Add(l.ToString());
+            }
+        }
     }
 }
