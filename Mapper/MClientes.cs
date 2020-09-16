@@ -1,4 +1,4 @@
-﻿using BE;
+﻿using Negocio;
 using DAL;
 using System;
 using System.Collections.Generic;
@@ -8,7 +8,7 @@ namespace Mapper
 {
     public class MClientes
     {
-        public List<BE.Clientes> CargarClientes()
+        public List<Negocio.Clientes> CargarClientes()
         {
             var Ds = new DataSet();
             var d = new Accesos();
@@ -49,7 +49,7 @@ namespace Mapper
             return ListaClientes;
         }
 
-        public bool InsertCliente(BE.Clientes c)
+        public bool InsertCliente(Negocio.Clientes c)
         {
             var a = new Accesos();
             string query = "INSERT into Clientes (ID_Cliente, Nombre, Apellido,Direccion,Telefono,Instagram,Facebook,Localidad)" +
@@ -57,7 +57,7 @@ namespace Mapper
             return a.Write(query);
         }
 
-        public bool UpdateCliente(BE.Clientes c)
+        public bool UpdateCliente(Negocio.Clientes c)
         {
             var a = new Accesos();
             string query = "UPDATE Clientes SET Nombre = '" + c.Nombre + "', Apellido = '" + c.Apellido + "', Direccion = '" + c.Direccion + "'," +
@@ -66,7 +66,7 @@ namespace Mapper
             return a.Write(query);
         }
 
-        public bool DeleteCliente(BE.Clientes cliente)
+        public bool DeleteCliente(Negocio.Clientes cliente)
         {
             var a = new Accesos();
             string query = "DELETE from Clientes WHERE ID_Cliente = " + cliente.ID_Cliente + "";

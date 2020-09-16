@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using System.Drawing;
-using BE;
+using Negocio;
 
 namespace LastraTPNro1
 {
@@ -16,8 +16,8 @@ namespace LastraTPNro1
         }
 
         #region Varaibles
-        BE.Jabones Bjabones =  new BE.Jabones();
-        BE.NJabones nJabones;
+        Negocio.Jabones Bjabones =  new Negocio.Jabones();
+        Negocio.NJabones nJabones;
         #endregion
 
         #region Metodos de los controles del Form
@@ -35,7 +35,7 @@ namespace LastraTPNro1
             try
             {
                 Asignar();
-                nJabones = new BE.NJabones();
+                nJabones = new Negocio.NJabones();
                 nJabones.Insert(Bjabones);
                 CargarGrilla();
                 lbLOG.ForeColor = Color.Green;
@@ -50,7 +50,7 @@ namespace LastraTPNro1
         private void btModificar_Click(object sender, EventArgs e)
         {
             Asignar();
-            nJabones = new BE.NJabones();
+            nJabones = new Negocio.NJabones();
             nJabones.Update(Bjabones);
             CargarGrilla();
             lbLOG.ForeColor = Color.Green;
@@ -64,7 +64,7 @@ namespace LastraTPNro1
             if (a == DialogResult.Yes)
             {
                 Asignar(Int32.Parse(tbCodigo.Text));
-                nJabones = new BE.NJabones();
+                nJabones = new Negocio.NJabones();
                 nJabones.Delete(Bjabones);
                 CargarGrilla();
                 lbLOG.ForeColor = Color.Red;
@@ -81,7 +81,7 @@ namespace LastraTPNro1
         #region Metodos mios
         protected void Asignar()
         {
-            Bjabones = new BE.Jabones
+            Bjabones = new Negocio.Jabones
             {
                 Id = Int32.Parse(tbCodigo.Text),
                 Color = cbColor.Text,
@@ -92,7 +92,7 @@ namespace LastraTPNro1
         }
         protected void Asignar(int Id)
         {
-            Bjabones = new BE.Jabones
+            Bjabones = new Negocio.Jabones
             {
                 Id = Id
             };
@@ -101,7 +101,7 @@ namespace LastraTPNro1
         //Esta poronga no me esta mostrando en el DGV los datos.
         void CargarGrilla()
         {
-            BE.NJabones Jabon = new BE.NJabones();
+            Negocio.NJabones Jabon = new Negocio.NJabones();
 
             dataGridView1.DataSource = null;
             dataGridView1.DataSource = Jabon.CargarJabones();
@@ -112,8 +112,8 @@ namespace LastraTPNro1
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var j = new BE.Jabones();
-            j = (BE.Jabones)dataGridView1.CurrentRow.DataBoundItem;
+            var j = new Negocio.Jabones();
+            j = (Negocio.Jabones)dataGridView1.CurrentRow.DataBoundItem;
             cbColor.Text = j.Color;
             cbAroma.Text = j.Aroma;
             cbBase.Text = j.Base;

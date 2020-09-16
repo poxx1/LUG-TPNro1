@@ -1,15 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
-using BE;
+using Negocio;
 using DAL;
-using Seguridad;
 
 namespace Mapper
 {
     public class MJabones
     {
-        public List<BE.Jabones> CargarJabones()
+        public List<Negocio.Jabones> CargarJabones()
         {
             DataSet ds = new DataSet();
             Accesos datos = new Accesos();
@@ -18,13 +17,13 @@ namespace Mapper
 
             ds = datos.ReadDS(query);
 
-            var listaJabones = new List<BE.Jabones>();
+            var listaJabones = new List<Negocio.Jabones>();
 
             if (ds.Tables[0].Rows.Count > 0)
             {
                 foreach (DataRow fila in ds.Tables[0].Rows)
                 {
-                    var jabon = new BE.Jabones();
+                    var jabon = new Negocio.Jabones();
 
                     //ID
                     jabon.Id = Convert.ToInt32(fila[0]);
@@ -47,7 +46,7 @@ namespace Mapper
             return listaJabones;
         }
 
-        public bool Insert(BE.Jabones jabon)
+        public bool Insert(Negocio.Jabones jabon)
         {
             var d = new Accesos();
             string query = "INSERT into Jabones (ID_Jabon, Color, Aroma, Base, Cantidad) VALUES ('" + jabon.Id
@@ -56,7 +55,7 @@ namespace Mapper
             return d.Write(query);
         }
 
-        public bool Update(BE.Jabones jabon)
+        public bool Update(Negocio.Jabones jabon)
         {
             var d = new Accesos();
 
@@ -67,7 +66,7 @@ namespace Mapper
             return d.Write(query);
         }
 
-        public bool Delete(BE.Jabones jabon)
+        public bool Delete(Negocio.Jabones jabon)
         {
             var d = new Accesos();
 
@@ -95,7 +94,7 @@ namespace Mapper
             {
                 foreach (DataRow fila in ds.Tables[0].Rows)
                 {
-                    var jabon = new BE.Jabones();
+                    var jabon = new Negocio.Jabones();
 
                     //Aroma
                     stringAroma = fila[0].ToString();
@@ -129,7 +128,7 @@ namespace Mapper
             {
                 foreach (DataRow fila in ds.Tables[0].Rows)
                 {
-                    var jabon = new BE.Jabones();
+                    var jabon = new Negocio.Jabones();
 
                     //Aroma
                     stringAroma = fila[0].ToString();
@@ -163,7 +162,7 @@ namespace Mapper
             {
                 foreach (DataRow fila in ds.Tables[0].Rows)
                 {
-                    var jabon = new BE.Jabones();
+                    var jabon = new Negocio.Jabones();
 
                     //Aroma
                     stringAroma = fila[0].ToString();

@@ -2,14 +2,14 @@
 using System.Collections.Generic;
 using System.Data;
 using DAL;
-using BE;
+using Negocio;
 using Mapper;
 
-namespace BE
+namespace Negocio
 {
     public class NJabones
     {
-        public List<BE.Jabones> CargarJabones()
+        public List<Negocio.Jabones> CargarJabones()
         {
             var mj = new MJabones();
             return mj.CargarJabones();
@@ -33,23 +33,22 @@ namespace BE
             return mj.SelectCOLORES();
         }
 
-        public bool Insert(BE.Jabones u)
+        public bool Insert(Negocio.Jabones u)
         {
             var mj = new MJabones();
             return mj.Insert(u);
         }
 
-        public bool Update(BE.Jabones u)
+        public bool Update(Negocio.Jabones u)
         {
             var mj = new MJabones();
             return mj.Update(u);
         }
 
-        public bool Delete(BE.Jabones u)
+        public bool Delete(Negocio.Jabones u)
         {
             var mj = new MJabones();
             return mj.Delete(u);
         }
     }
 }
-

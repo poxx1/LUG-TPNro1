@@ -1,6 +1,7 @@
 ﻿using DAL;
+using Mapper;
 
-namespace BE
+namespace Negocio
 {
     public class TestConnection
     {
@@ -14,20 +15,19 @@ namespace BE
         }
 
         #region Login Encriptado/Desencriptado
+
         public string SelectCript(string usr)
         {
-            BDConnection c = new BDConnection();
-            A = c.Consulta("SELECT * FROM [Bohemia].[dbo].[Usuarios] WHERE [User] = '"+usr+"';").ToString();
-            return A;
+            var mj = new MTest();
+            return mj.SelectCript(usr);
         }
-
         public string SelectCript(string sel, string usr)
         {
-            BDConnection c = new BDConnection();
-            A = c.Consulta("SELECT " + sel + " FROM [Bohemia].[dbo].[Usuarios] WHERE [User] = '"+usr+"';").ToString();
-            return A;
+            var mj = new MTest();
+            return mj.SelectCript(sel,usr);
         }
+   
         #endregion
-
+        
     }
 }

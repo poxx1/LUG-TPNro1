@@ -1,16 +1,15 @@
-﻿using BE;
+﻿using Negocio;
 using DAL;
 using Mapper;
 using Seguridad;
-using System;
 using System.Collections.Generic;
 using System.Data;
 
-namespace BE
+namespace Negocio
 {
     public class NUsuario
     {
-        public List<BE.Usuarios> LoadUsers()
+        public List<Negocio.Usuarios> LoadUsers()
         {
             var mj = new MUsers();
             return mj.LoadUsers();
@@ -35,3 +34,4 @@ namespace BE
         }
     }
 }
+

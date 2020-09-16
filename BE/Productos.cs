@@ -1,5 +1,5 @@
 ﻿
-namespace BE
+namespace Negocio
 {
     public class Productos
     {
@@ -9,3 +9,4 @@ namespace BE
         public int Cantidad { get; set; }
     }
 }
+    

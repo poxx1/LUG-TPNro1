@@ -8,6 +8,7 @@ namespace DAL
         //Esta clase funciona igual que Accesos.
         //En lugar de tener un DataAdapter, uso un DataReader.
 
+
         public object Consulta(string query)
         {
             SqlConnection _conexion = new SqlConnection(@"Server= CMD\SQLEXPRESS; Initial Catalog=Bohemia;Integrated Security=True");

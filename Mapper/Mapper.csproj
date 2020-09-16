@@ -45,6 +45,7 @@
     <Compile Include="MJabones.cs" />
     <Compile Include="MLocalidad.cs" />
     <Compile Include="MPj.cs" />
+    <Compile Include="MTest.cs" />
     <Compile Include="MUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -1,6 +1,6 @@
 ﻿using System;
 using Negocio;
-using BE;
+using Negocio;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
@@ -12,8 +12,8 @@ namespace LastraTPNro1
         #region Variables
         NClientes Nclientes;
         NLocalidad NLocalidad;
-        BE.Clientes BCliente;
-        BE.Localidades BLocalidad;
+        Negocio.Clientes BCliente;
+        Negocio.Localidades BLocalidad;
 
         //Este vector lo creo para despues splitear
         string[] s = new string[2];
@@ -172,7 +172,7 @@ namespace LastraTPNro1
             //Si no pongo el clear me agrega todos los nuevos y queda un asco
             cbASD.Items.Clear();
             NLocalidad = new NLocalidad();
-            var l = new List<BE.Localidades>();
+            var l = new List<Negocio.Localidades>();
             l = NLocalidad.LoadLocalidades();
             foreach (var item in l)
             {
@@ -191,8 +191,8 @@ namespace LastraTPNro1
 
         private void dG_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var c = new BE.Clientes();
-            c = (BE.Clientes)dG.CurrentRow.DataBoundItem;
+            var c = new Negocio.Clientes();
+            c = (Negocio.Clientes)dG.CurrentRow.DataBoundItem;
             tbIDC.Text = c.ID_Cliente.ToString();
             tbNombreC.Text = c.Nombre;
             tbDirC.Text = c.Direccion;

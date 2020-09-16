@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Drawing;
 using System.Windows.Forms;
-using BE;
+using Negocio;
 using Seguridad;
 
 namespace LastraTPNro1

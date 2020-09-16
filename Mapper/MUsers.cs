@@ -1,23 +1,19 @@
-﻿using BE;
+﻿using Negocio;
 using DAL;
 using Seguridad;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Mapper
 {
     public class MUsers
     {
-        public List<BE.Usuarios> LoadUsers()
+        public List<Negocio.Usuarios> LoadUsers()
         {
             var t = new DataTable();
             var a = new Accesos();
             var d = new Cripter();
-            var ListUsers = new List<BE.Usuarios>();
+            var ListUsers = new List<Negocio.Usuarios>();
             var query = "SELECT * FROM Usuarios";
 
             t = a.Read(query);
@@ -26,7 +22,7 @@ namespace Mapper
             {
                 foreach (DataRow f in t.Rows)
                 {
-                    var us = new BE.Usuarios();
+                    var us = new Negocio.Usuarios();
                     //Aca te llamo al desencriptador porque sino no voy a entender un carajo
 
                     us.Us = f[0].ToString();

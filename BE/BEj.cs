@@ -1,5 +1,5 @@
 ﻿
-namespace BE
+namespace Negocio
 {
     public class BEj
     {

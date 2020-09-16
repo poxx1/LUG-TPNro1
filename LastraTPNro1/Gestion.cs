@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
-using BE;
+using Negocio;
 using Negocio;
 
 namespace LastraTPNro1
@@ -88,7 +88,7 @@ namespace LastraTPNro1
             listBox3.Items.Clear();
             listBox4.Items.Clear();
 
-            var j = new BE.NJabones();
+            var j = new Negocio.NJabones();
             var t = j.SelectAROMAS();
             foreach (var l in t)
             {

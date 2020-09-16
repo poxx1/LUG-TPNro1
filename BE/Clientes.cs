@@ -1,5 +1,5 @@
 ﻿
-namespace BE
+namespace Negocio
 {
     public class Clientes
     {
@@ -12,6 +12,6 @@ namespace BE
         public string Facebook { get; set; }
         public string Localidad { get; set; }
 
-        public BE.Localidades BLocalidad { get; set; }
+        public Negocio.Localidades BLocalidad { get; set; }
     }
 }

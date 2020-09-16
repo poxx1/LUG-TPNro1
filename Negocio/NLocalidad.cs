@@ -8,25 +8,25 @@ namespace Negocio
 {
     public class NLocalidad
     {
-        public List<BE.Localidades> LoadLocalidades()
+        public List<Negocio.Localidades> LoadLocalidades()
         {
             var mj = new MLocalidad();
             return mj.LoadLocalidades();
         }
 
-        public bool Insert(BE.Localidades j)
+        public bool Insert(Negocio.Localidades j)
         {
             var mj = new MLocalidad();
             return mj.Insert(j);
         }
 
-        public bool Update(BE.Localidades j)
+        public bool Update(Negocio.Localidades j)
         {
             var mj = new MLocalidad();
             return mj.Update(j);
         }
 
-        public bool Delete(BE.Localidades j)
+        public bool Delete(Negocio.Localidades j)
         {
             var mj = new MLocalidad();
             return mj.Delete(j);
