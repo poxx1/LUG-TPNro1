@@ -2,6 +2,7 @@
 using System.Drawing;
 using System.Windows.Forms;
 using BE;
+using Mapper;
 using Seguridad;
 
 namespace LastraTPNro1
@@ -57,7 +58,7 @@ namespace LastraTPNro1
             {
                 Encriptar();
 
-                var NUser = new BE.NUsuario();
+                var NUser = new MUsers();
                 var BUser = new BE.Usuarios();
                 BUser.Us = a;
                 NUser.Delete(BUser);
@@ -73,7 +74,7 @@ namespace LastraTPNro1
 
         private void button2_Click(object sender, EventArgs e)
         {
-            var NUser = new BE.NUsuario();
+            var NUser = new MUsers();
             var BUser = new BE.Usuarios();
 
             Encriptar();
@@ -110,6 +111,7 @@ namespace LastraTPNro1
 
         //El desencriptar esta al pedo porque no me interesa hacerlo aca.
         //Lo dejo por si en el futuro lo tengo que usar
+
         protected void Desencriptar()
         {
             user = c.Desencriptar(user);
@@ -120,7 +122,7 @@ namespace LastraTPNro1
         {
             tbPass.Clear();
             comboBox1.Items.Clear();
-            var u = new BE.NUsuario();
+            var u = new MUsers();
             var l = u.LoadUsers();
             foreach (var j in l)
             {
@@ -129,7 +131,5 @@ namespace LastraTPNro1
         }
 
         #endregion
-
-   
     }
 }

@@ -41,7 +41,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="MpAlumno.cs" />
+    <Compile Include="MClientes.cs" />
+    <Compile Include="MJabones.cs" />
+    <Compile Include="MLocalidad.cs" />
+    <Compile Include="MPj.cs" />
+    <Compile Include="MUsers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -52,6 +56,10 @@
     <ProjectReference Include="..\DAL\DAL.csproj">
       <Project>{d05360b4-c553-416b-a116-c3c412447e1f}</Project>
       <Name>DAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Seguridad\Seguridad.csproj">
+      <Project>{2F67BE62-4373-49AE-B660-8D5D84CCA72A}</Project>
+      <Name>Seguridad</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

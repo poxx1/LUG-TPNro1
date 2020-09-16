@@ -120,6 +120,10 @@
       <Project>{8538cc9e-8b49-4696-bae6-e8b8cb3855d5}</Project>
       <Name>BE</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Mapper\Mapper.csproj">
+      <Project>{18B6F91C-80FB-4BD4-96D2-360996CAD960}</Project>
+      <Name>Mapper</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Negocio\Negocio.csproj">
       <Project>{0570a09d-2caf-42ae-8ed3-b59b6598ee97}</Project>
       <Name>Negocio</Name>

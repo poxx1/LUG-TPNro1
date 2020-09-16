@@ -4,6 +4,7 @@ using BE;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
+using Mapper;
 
 namespace LastraTPNro1
 {
@@ -120,8 +121,8 @@ namespace LastraTPNro1
 
         private void FClientes_Load(object sender, EventArgs e)
         {
-            Nclientes = new NClientes();
-            Nclientes.CargarClientes();
+            var c = new MClientes();
+            c.CargarClientes();
         }
 
         private void btUpdate_Click(object sender, EventArgs e)
@@ -180,7 +181,7 @@ namespace LastraTPNro1
 
         private void LoadClientes()
         {
-            Negocio.NClientes nC = new NClientes();
+            var nC = new MClientes();
             dG.DataSource = null;
             dG.DataSource = nC.CargarClientes();
             dG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;

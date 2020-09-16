@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using BE;
+using Mapper;
 
 namespace LastraTPNro1
 {
@@ -9,8 +10,10 @@ namespace LastraTPNro1
         public Gestion()
         {
             InitializeComponent();
-            MessageBox.Show("Bienvenido", "Tango Software",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Bienvenido", "Tango Software", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
+
+        #region Metodos del formulario
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -55,27 +58,13 @@ namespace LastraTPNro1
             Hide();
         }
 
-        #region MetodosInutiles
-        private void button2_Click(object sender, EventArgs e)
-        {
-            TestConnection test = new TestConnection();
-            MessageBox.Show(test.Test());
-        }
-
-        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        #endregion
-
         private void btInformesCT_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             listBox5.Items.Clear();
             listBox6.Items.Clear();
 
-            var j = new Negocio.NClientes();
+            var j = new MClientes();
             var t = j.SelectINSTAGRAM();
             foreach (var l in t)
             {
@@ -99,7 +88,7 @@ namespace LastraTPNro1
             listBox3.Items.Clear();
             listBox4.Items.Clear();
 
-            NJabones j = new NJabones();
+            var j = new MJabones();
             var t = j.SelectAROMAS();
             foreach (var l in t)
             {
@@ -116,5 +105,23 @@ namespace LastraTPNro1
                 listBox4.Items.Add(l.ToString());
             }
         }
+
+        #endregion
+
+        #region MetodosInutiles
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TestConnection test = new TestConnection();
+            MessageBox.Show(test.Test());
+        }
+
+        private void productosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
+
+       
     }
 }

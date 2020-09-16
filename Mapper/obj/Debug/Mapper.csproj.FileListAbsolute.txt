@@ -20,3 +20,16 @@ K:\UAI 2020\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cach
 K:\UAI 2020\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CopyComplete
 K:\UAI 2020\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.dll
 K:\UAI 2020\LUG\LUG-TPNro1\Mapper\obj\Debug\Mapper.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\Mapper.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\Mapper.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\BE.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\DAL.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\BE.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\DAL.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\obj\Debug\Mapper.csprojAssemblyReference.cache
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CoreCompileInputs.cache
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\obj\Debug\Mapper.csproj.CopyComplete
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\obj\Debug\Mapper.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\obj\Debug\Mapper.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\Seguridad.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Mapper\bin\Debug\Seguridad.pdb

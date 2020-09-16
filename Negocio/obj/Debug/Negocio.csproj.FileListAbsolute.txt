@@ -28,3 +28,18 @@ K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.dll
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.pdb
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\bin\Debug\Seguridad.dll
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\bin\Debug\Seguridad.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Negocio.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Negocio.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\BE.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\DAL.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Seguridad.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\BE.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\DAL.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Seguridad.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.cache
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\obj\Debug\Negocio.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\obj\Debug\Negocio.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Mapper.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\Negocio\bin\Debug\Mapper.pdb

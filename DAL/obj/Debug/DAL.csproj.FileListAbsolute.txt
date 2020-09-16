@@ -16,3 +16,8 @@ K:\UAI 2020\LUG\LUG-TPNro1\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
 K:\UAI 2020\LUG\LUG-TPNro1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
 K:\UAI 2020\LUG\LUG-TPNro1\DAL\obj\Debug\DAL.dll
 K:\UAI 2020\LUG\LUG-TPNro1\DAL\obj\Debug\DAL.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\DAL\bin\Debug\DAL.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\DAL\bin\Debug\DAL.pdb
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\DAL\obj\Debug\DAL.dll
+K:\UAI 2020\LUG\TP 1 6 Capas\LUG-TPNro1\DAL\obj\Debug\DAL.pdb
