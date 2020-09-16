@@ -22,6 +22,7 @@ namespace LastraTPNro1
         public Usuarios()
         {
             InitializeComponent();
+            LoadUsers();
         }
 
         #region Metodos del Formulario
@@ -45,6 +46,8 @@ namespace LastraTPNro1
 
             lbLOG.ForeColor = Color.Green;
             lbLOG.Text = "Se agrego el usuario a la base de datos.";
+
+            LoadUsers();
         }
         
         private void button3_Click(object sender, EventArgs e)
@@ -64,6 +67,8 @@ namespace LastraTPNro1
             }
             else
                 lbLOG.Text = "No se elimino el usuario";
+
+            LoadUsers();
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -80,8 +85,19 @@ namespace LastraTPNro1
 
             lbLOG.ForeColor = Color.Yellow;
             lbLOG.Text = "Se modifico el usuario en la base de datos.";
+
+            LoadUsers();
         }
 
+        private void Usuarios_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tbUser.Text = comboBox1.Text;
+        }
         #endregion
 
         #region Metodos mios
@@ -100,6 +116,20 @@ namespace LastraTPNro1
             pass = c.Desencriptar(pass);
         }
 
+        protected void LoadUsers()
+        {
+            tbPass.Clear();
+            comboBox1.Items.Clear();
+            var u = new BE.NUsuario();
+            var l = u.LoadUsers();
+            foreach (var j in l)
+            {
+                comboBox1.Items.Add(j.Us);
+            }
+        }
+
         #endregion
+
+   
     }
 }

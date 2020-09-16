@@ -39,6 +39,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.lbLOG = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button1
@@ -134,7 +135,7 @@
             this.lbLOG.BackColor = System.Drawing.Color.Black;
             this.lbLOG.Font = new System.Drawing.Font("Bahnschrift", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbLOG.ForeColor = System.Drawing.Color.Aqua;
-            this.lbLOG.Location = new System.Drawing.Point(12, 93);
+            this.lbLOG.Location = new System.Drawing.Point(9, 107);
             this.lbLOG.Name = "lbLOG";
             this.lbLOG.Size = new System.Drawing.Size(34, 16);
             this.lbLOG.TabIndex = 16;
@@ -146,11 +147,20 @@
             this.label7.BackColor = System.Drawing.Color.Black;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.ForeColor = System.Drawing.Color.White;
-            this.label7.Location = new System.Drawing.Point(12, 110);
+            this.label7.Location = new System.Drawing.Point(9, 93);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(162, 13);
             this.label7.TabIndex = 17;
             this.label7.Text = "LASTRA, JULIAN MARCOS";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(115, 28);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(59, 21);
+            this.comboBox1.TabIndex = 18;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // Usuarios
             // 
@@ -158,7 +168,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(294, 129);
+            this.ClientSize = new System.Drawing.Size(294, 127);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.lbLOG);
             this.Controls.Add(this.tbPass);
@@ -171,6 +182,7 @@
             this.Controls.Add(this.button1);
             this.Name = "Usuarios";
             this.Text = "Usuarios";
+            this.Load += new System.EventHandler(this.Usuarios_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -188,5 +200,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lbLOG;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -26,3 +26,5 @@ K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CoreCompileInputs.ca
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.dll
 K:\UAI 2020\LUG\LUG-TPNro1\Negocio\obj\Debug\Negocio.pdb
+K:\UAI 2020\LUG\LUG-TPNro1\Negocio\bin\Debug\Seguridad.dll
+K:\UAI 2020\LUG\LUG-TPNro1\Negocio\bin\Debug\Seguridad.pdb

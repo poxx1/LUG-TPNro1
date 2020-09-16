@@ -1,11 +1,44 @@
 ﻿using BE;
 using DAL;
+using Seguridad;
 using System;
+using System.Collections.Generic;
+using System.Data;
 
 namespace BE
 {
     public class NUsuario
     {
+        public List<BE.Usuarios> LoadUsers()
+        {
+            var t = new DataTable();
+            var a = new Accesos();
+            var d = new Cripter();
+            var ListUsers = new List<BE.Usuarios>();
+            var query = "SELECT * FROM Usuarios";
+
+            t = a.Read(query);
+
+            if (t.Rows.Count > 0)
+            {
+                foreach (DataRow f in t.Rows)
+                {
+                    var us = new BE.Usuarios();
+                    //Aca te llamo al desencriptador porque sino no voy a entender un carajo
+
+                    us.Us = f[0].ToString();
+
+                    us.Us = d.Desencriptar(us.Us);
+                    
+                    ListUsers.Add(us);
+                }
+            }
+            else
+                ListUsers = null;
+
+            return ListUsers;
+        }
+
         public bool Insert(Usuarios usuario)
         {
             var d = new Accesos();
