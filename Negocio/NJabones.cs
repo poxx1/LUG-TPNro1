@@ -15,6 +15,24 @@ namespace BE
             return mj.CargarJabones();
         }
 
+        public List<string> SelectAROMAS()
+        {
+            var mj = new MJabones();
+            return mj.SelectAROMAS();
+        }
+
+        public List<string> SelectBASES()
+        {
+            var mj = new MJabones();
+            return mj.SelectBASES();
+        }
+
+        public List<string> SelectCOLORES()
+        {
+            var mj = new MJabones();
+            return mj.SelectCOLORES();
+        }
+
         public bool Insert(BE.Jabones u)
         {
             var mj = new MJabones();

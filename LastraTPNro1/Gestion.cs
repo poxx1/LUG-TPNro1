@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 using BE;
-using Mapper;
+using Negocio;
 
 namespace LastraTPNro1
 {
@@ -64,7 +64,7 @@ namespace LastraTPNro1
             listBox5.Items.Clear();
             listBox6.Items.Clear();
 
-            var j = new MClientes();
+            var j = new NClientes();
             var t = j.SelectINSTAGRAM();
             foreach (var l in t)
             {
@@ -88,7 +88,7 @@ namespace LastraTPNro1
             listBox3.Items.Clear();
             listBox4.Items.Clear();
 
-            var j = new MJabones();
+            var j = new BE.NJabones();
             var t = j.SelectAROMAS();
             foreach (var l in t)
             {

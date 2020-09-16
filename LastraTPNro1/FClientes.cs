@@ -4,7 +4,6 @@ using BE;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Drawing;
-using Mapper;
 
 namespace LastraTPNro1
 {
@@ -37,6 +36,7 @@ namespace LastraTPNro1
             Nclientes.DeleteCliente(BCliente);
             lbLOG.ForeColor = Color.Red;
             lbLOG.Text = "Se elimino el cliente de la base de datos.";
+            LoadClientes();
         }
 
         private void btInsertLOC_Click(object sender, EventArgs e)
@@ -72,7 +72,7 @@ namespace LastraTPNro1
             Nclientes.InsertCliente(BCliente);
             lbLOG.ForeColor = Color.Green;
             lbLOG.Text = "Se agrego el Cliente a la base de datos.";
-
+            LoadClientes();
         }
 
         private void btUpdateLOC_Click(object sender, EventArgs e)
@@ -121,8 +121,8 @@ namespace LastraTPNro1
 
         private void FClientes_Load(object sender, EventArgs e)
         {
-            var c = new MClientes();
-            c.CargarClientes();
+            var c = new NClientes();
+            c.CargarCliente();
         }
 
         private void btUpdate_Click(object sender, EventArgs e)
@@ -133,6 +133,7 @@ namespace LastraTPNro1
             Nclientes.UpdateCliente(BCliente);
             lbLOG.ForeColor = Color.Yellow;
             lbLOG.Text = "Se modifico el Cliente en la base de datos.";
+            LoadClientes();
         }
         #endregion
 
@@ -181,9 +182,9 @@ namespace LastraTPNro1
 
         private void LoadClientes()
         {
-            var nC = new MClientes();
+            var nC = new NClientes();
             dG.DataSource = null;
-            dG.DataSource = nC.CargarClientes();
+            dG.DataSource = nC.CargarCliente();
             dG.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.DisplayedCells;
         }
         #endregion
